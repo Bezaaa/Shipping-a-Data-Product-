@@ -1,0 +1,16 @@
+name: 'warehouse'
+version: '1.0'
+config-version: 2
+
+profile: 'warehouse'
+
+model-paths: ["models"]
+target-path: "target"
+clean-targets: ["target"]
+
+models:
+  warehouse:
+    staging:
+      +schema: staging
+    marts:
+      +schema: marts
